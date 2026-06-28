@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Wiring diagram SVG for Euronet SHARK 4.2kW system (Persian labels) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <style>
+    .text { font-family: Tahoma, Arial, sans-serif; font-size:14px; }
+    .title { font-size:18px; font-weight:bold; }
+    .box { fill:#f7f7f7; stroke:#333; stroke-width:1.5 }
+    .line { stroke:#222; stroke-width:2 }
+    .thin { stroke-width:1 }
+  </style>
+
+  <!-- Title -->
+  <text x="20" y="30" class="title">نمودار سیم‌کشی پیشنهادی — اینورتر E‑SK4224V1 (سیستم شما)</text>
+
+  <!-- PV panels -->
+  <g id="pv" transform="translate(40,60)">
+    <rect x="0" y="0" width="220" height="120" class="box" />
+    <text x="110" y="20" text-anchor="middle" class="text">استرینگ PV (4× Mana 600W)</text>
+    <text x="110" y="45" text-anchor="middle" class="text">1 × 4S</text>
+    <text x="110" y="70" text-anchor="middle" class="text">Voc(−25°C)≈235.2 V</text>
+  </g>
+
+  <!-- PV cable to combiner -->
+  <line x1="260" y1="120" x2="360" y2="120" class="line" />
+  <text x="310" y="110" class="text" text-anchor="middle">کابل PV 4 mm² (≈4 m)</text>
+
+  <!-- Combiner / Junction box with PV breaker and SPD -->
+  <g transform="translate(360,80)">
+    <rect x="0" y="0" width="160" height="120" class="box" />
+    <text x="80" y="20" text-anchor="middle" class="text">Junction Box</text>
+    <text x="80" y="45" text-anchor="middle" class="text">PV DC Breaker: 20A, 1000VDC</text>
+    <text x="80" y="70" text-anchor="middle" class="text">DC SPD (Class II)</text>
+  </g>
+
+  <!-- cable to inverter MPPT -->
+  <line x1="520" y1="140" x2="700" y2="140" class="line" />
+  <text x="610" y="130" class="text" text-anchor="middle">کابل PV 4 mm² → MPPT (≈3.5–4 m)</text>
+
+  <!-- Inverter block -->
+  <g transform="translate(700,60)">
+    <rect x="0" y="0" width="300" height="180" class="box" />
+    <text x="150" y="24" text-anchor="middle" class="text">اینورتر E‑SK4224V1</text>
+    <text x="150" y="48" text-anchor="middle" class="text">MPPT: 30–450 V, Imax=18A</text>
+    <text x="150" y="72" text-anchor="middle" class="text">AC Out: 230VAC</text>
+    <text x="150" y="96" text-anchor="middle" class="text">DC In: 25.6V (Battery)</text>
+
+    <!-- AC output to MCB -->
+    <line x1="150" y1="180" x2="150" y2="260" class="line" />
+    <rect x="120" y="260" width="60" height="40" fill="#fff" stroke="#333"/>
+    <text x="150" y="286" text-anchor="middle" class="text">AC MCB 2‑pole 20A</text>
+  </g>
+
+  <!-- Battery and isolator -->
+  <g transform="translate(460,320)">
+    <rect x="0" y="0" width="220" height="120" class="box" />
+    <text x="110" y="20" text-anchor="middle" class="text">باتری TITAN 25.6V 100Ah</text>
+    <text x="110" y="44" text-anchor="middle" class="text">2560 Wh</text>
+    <text x="110" y="68" text-anchor="middle" class="text">Max charge:100A (rec:70A)</text>
+  </g>
+
+  <!-- Battery cable & isolator near battery -->
+  <line x1="220" y1="380" x2="460" y2="380" class="line" />
+  <text x="340" y="368" text-anchor="middle" class="text">کابل باتری 35 mm² (≈1 m)</text>
+  <rect x="300" y="360" width="80" height="40" fill="#fff" stroke="#333" />
+  <text x="340" y="386" text-anchor="middle" class="text">Battery MCCB 200A</text>
+
+  <!-- connection to inverter DC input -->
+  <line x1="520" y1="380" x2="700" y2="380" class="line" />
+  <text x="610" y="368" class="text" text-anchor="middle">DC + / DC − → اینورتر (25.6V)</text>
+
+  <!-- BMS cable -->
+  <line x1="520" y1="340" x2="700" y2="260" class="line thin" stroke-dasharray="4 4" />
+  <text x="600" y="300" class="text" text-anchor="middle">RJ45 CAT6 (BMS) — جدا از کابل قدرت</text>
+
+  <!-- Legend -->
+  <g transform="translate(40,520)">
+    <rect x="0" y="0" width="1120" height="150" fill="#fff" stroke="#333" />
+    <text x="20" y="22" class="text"><tspan font-weight="bold">راهنما:</tspan> همهٔ کابل‌ها و تجهیزات DC باید DC‑rated باشند. فیوز باتری ≤150 mm از قطب مثبت باتری نصب شود.</text>
+    <text x="20" y="50" class="text">کابل‌های پیشنهادی: Battery = 35 mm² tinned copper; PV = PV1‑F 4 mm²; Earth = ≥6 mm²</text>
+    <text x="20" y="76" class="text">تنظیمات پیشنهادی اینورتر: Program02=70A, Program26=28.2V, Program27=28.8V, Program29=21.6V, Program05=LIb</text>
+  </g>
+</svg>
