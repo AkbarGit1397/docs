@@ -1,20 +1,20 @@
 Item,Specification,Quantity,Notes
-PV DC breaker,2-pole DC breaker 20 A,1,DC-rated ≥1000 VDC
-PV SPD,DC two-pole Class II,1,Rated ≥600–1000 VDC
+PV DC breaker,2-pole DC breaker 20 A,1,DC-rated ≥1000 VDC — for PV string isolation, rapid switch
+PV SPD,DC two-pole Class II,1,DC PV surge protector rated ≥600–1000 VDC
 PV cable,PV1-F 4 mm²,1 string (pair),Length ≈ 4.5 m with 10% margin
 MC4 connectors,MC4 male/female pairs,As needed,2 per panel
-Battery isolator / MCCB,200 A DC,1,Install ≤150 mm from battery + push-to-trip recommended
+Battery isolator / MCCB,200 A DC,1,DC‑rated, push‑to‑trip recommended
 Battery cable,35 mm² tinned copper,2,Length ≈ 1.1 m each (Pos/Neg)
 Cable lugs,Lugs for 35 mm²,4,Crimped and heat-shrinked
 AC MCB,2-pole 20 A Type C,1,230 VAC, Icn ≥ 6 kA
 AC input breaker,20 A,1,If separate from AC MCB
-RJ45 CAT6 shielded,BMS cable,1,Keep separate from power cables
-Earthing cable,≥6 mm²,As needed,For PE/grounding
-Junction box,Junction box for PV SPD and breakers,1,
-Lugs/heat-shrink/cable glands,Assorted,As needed,
-Tools,Crimp tool, torque wrench, multimeter,As needed,
+RJ45 CAT6 shielded,BMS cable,1,Keep separate from power cables; shielded STP recommended
+Earthing cable,≥6 mm²,As needed,For PE/grounding per local code
+Junction box,Junction box for PV SPD and breakers,1,Weatherproof for outdoor PV combiner
+Lugs/heat-shrink/cable glands,Assorted,As needed,Proper IP-rated glands and heat-shrink kit
+Tools,Crimp tool, torque wrench, multimeter,As needed,Ensure correct crimp die for 35 mm²
 
 Notes:,Program settings (inverter):, ,
-,Program02 (Max charge)=70A,,
+,Program02 (Max charge)=40A,,
 ,Program05=BMS protocol (LIb),,
 ,Program26 (Bulk)=28.2V,Program27 (Float)=28.8V,Program29 (Cut-off)=21.6V
