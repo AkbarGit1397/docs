@@ -1,0 +1,20 @@
+Item,Specification,Quantity,Notes,Brand Suggestion,Example Link,Est. Price (USD)
+PV DC breaker,2-pole DC breaker 20 A,1,DC-rated ≥1000 VDC,Cutler-Hammer/ABB/Schneider,https://www.abb.com/,120
+PV SPD,DC two-pole Class II,1,DC PV surge protector rated ≥600–1000 VDC,DEHN/Philips/Phoenix Contact,https://www.dehn-international.com/,150
+PV cable,PV1-F 4 mm²,1 string (pair),Length ≈ 4.5 m with 10% margin,Helukabel/Prolink,https://www.helukabel.com/,12
+MC4 connectors,MC4 male/female pairs,8,2 per panel — ensure UV rated,Amphenol/Weidmuller,https://www.amphenol-socapex.com/,16
+Battery isolator / MCCB,200 A DC,1,DC‑rated, push‑to‑trip recommended,Schneider/ABB/Siemens,https://www.se.com/,320
+Battery cable,35 mm² tinned copper,2,Length ≈ 1.1 m each (Pos/Neg); use tinned flexible cable,Orieme/Finolex,https://www.finolex.com/,30
+Cable lugs,Lugs for 35 mm²,4,Proper crimp lugs with insulation,TE Connectivity/Staubli,https://www.te.com/,12
+AC MCB,2-pole 20 A Type C,1,230 VAC, Icn ≥ 6 kA,Schneider/ABB,https://www.schneider-electric.com/,25
+AC input breaker,20 A,1,If separate from AC MCB,Schneider/ABB,https://www.schneider-electric.com/,20
+RJ45 CAT6 shielded,BMS cable,1,Keep separate from power cables; shielded STP recommended,Belden/Commscope,https://www.commscope.com/,8
+Earthing cable,≥6 mm²,As needed,For PE/grounding per local code,Prysmian,https://www.prysmiangroup.com/,5
+Junction box,Junction box for PV SPD and breakers,1,Weatherproof for outdoor PV combiner,ABB/Weidmuller,https://www.weidmuller.com/,60
+Lugs/heat-shrink/cable glands,Assorted,As needed,Proper IP-rated glands and heat-shrink kit,3M/TE,https://www.3m.com/,25
+Tools,Crimp tool (35 mm²),1,Ensure correct die; include torque wrench and multimeter,Greenlee/Klein Tools,https://www.kleintools.com/,220
+
+Summary,,,,,,
+Total Est. Price (approx.),,,,,1016
+
+Notes: Prices are approximate retail estimates in USD and do not include shipping, VAT, or local taxes. Replace items/brands with local equivalents as needed.
